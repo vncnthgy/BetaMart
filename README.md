@@ -1,65 +1,64 @@
-# **Building a Product CRUD App with Vue.js Animations and Vuex**
-
-This lab activity will evaluate your ability to handle forms, animations, and transitions while creating a CRUD (Create, Read, Update, Delete) application for managing products using Vue.js.
+# **Building a Content Management for E-commerce Platform with Vue and Laravel API**
 
 ## Table of Contents
 
-- [Objectives](#objectives)
-- [Tasks](#tasks)
+- [Background](#background)
+- [Objective](#objective)
+- [Requirement](#requirement)
+- [Solution](#solution)
 - [Setup](#setup)
-- [Screenshots](#screenshots)
 
-## **Objectives:**
+## **Background:**
 
--   Develop a multi-page Vue.js application with components.
--   Handle user input for product creation and updates through forms.
--   Implement CRUD operations for product data using array as storage.
--   Utilize animations and transitions to enhance user experience.
+You are a software engineer working for a company that upgrade the BetaMart to add content management functionality. The upgrade will consist of a front-end application built with React and a back-end API developed with Laravel to handle content management.
 
-## **Tasks:**
+## **Objective:**
 
-Develop a Vue.js application that allows users to manage a list of products. The application should have the following features:
+The objective of this project is to create a functional content management platform where business owners can add products, edit products, view products, delete products and manages user. 
 
-1. **Product List:**
+## **Requirement:**
 
-    -   Display a list of products with their name, description, and price.
-    -   Utilize Vue components to structure each product entry.
+1. **Front-End Application (Vue):**
 
-2. **Add Product:**
+    -   Implement a user-friendly interface using Vue to allow users to interact with the content management platform.
+    -   Display a list of available products fetched from the Laravel API.
+    -   Allow users to add, edit, delete items, and manage user.
 
-    -   Provide a dedicated page or section with a form for adding new products.
-    -   Capture user input for product name, description, and price.
-    -   Save the new product data upon submission to an array as storage.
-    -   Apply animation after successful addition.
+2. **Back-End API (Laravel):**
 
-3. **Edit Product:**
+    -   Develop a RESTful API using Laravel to handle requests from the front-end application.
+    -   Implement endpoints to fetch product data from the database and send it to the front end.
+    -   Create endpoints to manage the view products, including adding product, removing products, updating products, and manage user.
 
-    -   Allow users to edit existing products. This can be:
-        -   In-place editing by clicking on a product and displaying editing fields.
-        -   Separate edit page for each product accessed through a click action.
-    -   Update the product data in storage on user changes.
-    -   Implement form validation to ensure proper data entry.
-    -   Animate the update of product details when edited.
+## **Solution:**
 
-4. **Delete Product:**
+1. **Front-End Development (React):**
 
-    -   Provide a delete button or action for each product.
-    -   Confirm user intent before removing the product.
-    -   Remove the product from the data storage.
-    -   Animate the removal of the product from the list.
-    
+    -   Create Vue components for different sections of the content management platform, such as view product, edit product, delete products, and add products.
+    -   Use Vue Router to handle navigation between different pages of the application.
+    -   Use Fetch API to make HTTP requests to the Laravel API and fetch data.
+    -   Design the user interface to be responsive and accessible across various devices and screen sizes.
+
+2. **Back-End Development (Laravel):**
+
+    -   Set up a Laravel project with appropriate database configurations.
+    -   Define models and migrations to represent products in the database.
+    -   Implement controllers to handle incoming requests from the front end and perform necessary operations, such as fetching product data and CRUD operations.
+    -   Use Laravel's validation features to validate incoming requests and ensure data integrity.
+
+
 ## Setup
 
 **Clone the project repository:**
 
 ```
-    git -c http.sslVerify=false clone https://github.com/vncnthgy/midtermactivity2.git
+    git clone https://github.com/vncnthgy/BetaMart.git
 ```
 
 **Go to project directory:**
 
 ```
-    cd midtermactivity2
+    cd BetaMart
 ```
 
 **Install the project dependencies:**
@@ -68,50 +67,8 @@ Develop a Vue.js application that allows users to manage a list of products. The
     npm install
 ```
 
-**Check your current branch:**
-
-```
-    git branch --all
-```
-
-**Create your own branch:**
-
-```
-    git checkout -b branch-name
-```
-
 **Run the project:**
 
 ```
     npm run serve
 ```
-
-## Screenshots
-
-![Image 1](src/assets/images/image1.png)
-
-![Image 2](src/assets/images/image2.png)
-
-![Image 3](src/assets/images/image3.png)
-
-![Image 4](src/assets/images/image4.png)
-
-![Image 5](src/assets/images/image5.png)
-
-![Image 6](src/assets/images/image6.png)
-
-![Image 7](src/assets/images/image7.png)
-
-![Image 8](src/assets/images/image8.png)
-
-![Image 9](src/assets/images/image9.png)
-
-![Image 10](src/assets/images/image10.png)
-
-![Image 11](src/assets/images/image11.png)
-
-![Image 12](src/assets/images/image12.png)
-
-![Image 13](src/assets/images/image13.png)
-
-![Image 14](src/assets/images/image14.png)
