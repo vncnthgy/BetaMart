@@ -11,8 +11,9 @@ export const store = new Vuex.Store({
       { id: 5, name: 'Sample Product 5', description: 'Sample Description 5', price: 599, },
       { id: 6, name: 'Sample Product 6', description: 'Sample Description 6', price: 699, },
       { id: 7, name: 'Sample Product 7', description: 'Sample Description 7', price: 799, },
+      { id: 8, name: 'Sample Product 8', description: 'Sample Description 8', price: 899, },
     ],
-    nextProductId: 8
+    nextProductId: 9
   },
   mutations: {
     addProduct(state, productToAdd) {

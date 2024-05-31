@@ -12,7 +12,6 @@
           <div class="container">
             <h2>Vincent M. Higoy</h2>
             <p class="title">2000338</p>
-            <p><button class="button">Contact</button></p>
           </div>
         </div>
       </div>
@@ -23,7 +22,6 @@
           <div class="container">
             <h2>Al Vincent S. Ichon</h2>
             <p class="title">2000637</p>
-            <p><button class="button">Contact</button></p>
           </div>
         </div>
       </div>
@@ -34,7 +32,6 @@
           <div class="container">
             <h2>Miguel Angelo T. Jacob</h2>
             <p class="title">2000909</p>
-            <p><button class="button">Contact</button></p>
           </div>
         </div>
       </div>
@@ -45,7 +42,6 @@
           <div class="container">
             <h2>Arnel O. Jaen</h2>
             <p class="title">1700261</p>
-            <p><button class="button">Contact</button></p>
           </div>
         </div>
       </div>
@@ -56,7 +52,6 @@
           <div class="container">
             <h2>Alberto M. Jain III</h2>
             <p class="title">2000309</p>
-            <p><button class="button">Contact</button></p>
           </div>
         </div>
       </div>
@@ -93,6 +88,12 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .title-section {
@@ -127,16 +128,5 @@ html {
   text-align: center;
   cursor: pointer;
   width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
 }
 </style>
