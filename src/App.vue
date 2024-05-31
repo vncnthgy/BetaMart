@@ -21,7 +21,7 @@
             <RouterLink to="/about" class="nav-link mx-2">About</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/account" class="nav-link mx-2">Account</RouterLink>
+            <RouterLink to="/login" class="nav-link mx-2">Login</RouterLink>
           </li>
         </ul>
       </div>
