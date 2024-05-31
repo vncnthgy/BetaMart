@@ -11,13 +11,11 @@
       </div>
       <div class="form-group mb-3">
         <label for="description"><b>Description:</b></label>
-        <textarea id="description" v-model="description" class="form-control" rows="3"
-          placeholder="Enter Product Description" required></textarea>
+        <textarea id="description" v-model="description" class="form-control" rows="3" placeholder="Enter Product Description" required></textarea>
       </div>
       <div class="form-group mb-3">
         <label for="price"><b>Price:</b></label>
-        <input type="number" id="price" v-model.number="price" class="form-control" placeholder="Enter Product Price"
-          min="0" required>
+        <input type="number" id="price" v-model.number="price" class="form-control" placeholder="Enter Product Price" min="0" required>
       </div>
       <div class="d-grid gap-2 col-5 mx-auto">
         <div class="btn-group-vertical" role="group">

@@ -3,29 +3,24 @@
         <div class="title-section">
             <h2 class="text-center">DELETE PRODUCT</h2>
         </div><br>
-        <p v-if="successMessage" class="delete-product-message alert alert-success mt-3 text-center">{{ successMessage
-            }}</p>
+        <p v-if="successMessage" class="delete-product-message alert alert-success mt-3 text-center">{{ successMessage }}</p>
         <form @submit.prevent="deleteProduct" class="delete-product-form">
             <div class="form-group mb-3">
                 <label for="name"><b>Product Name:</b></label>
-                <input type="text" id="name" v-model="name" class="form-control-plaintext"
-                    placeholder="Enter Product Name" readonly>
+                <input type="text" id="name" v-model="name" class="form-control-plaintext" placeholder="Enter Product Name" readonly>
             </div>
             <div class="form-group mb-3">
                 <label for="description"><b>Description:</b></label>
-                <textarea id="description" v-model="description" class="form-control-plaintext" rows="3"
-                    placeholder="Enter Product Description" readonly></textarea>
+                <textarea id="description" v-model="description" class="form-control-plaintext" rows="3" placeholder="Enter Product Description" readonly></textarea>
             </div>
             <div class="form-group mb-3">
                 <label for="price"><b>Price:</b></label>
-                <input type="number" id="price" v-model.number="price" class="form-control-plaintext"
-                    placeholder="Enter Product Price" min="0" readonly>
+                <input type="number" id="price" v-model.number="price" class="form-control-plaintext" placeholder="Enter Product Price" min="0" readonly>
             </div>
             <div class="d-grid gap-2 col-5 mx-auto">
                 <div class="btn-group-vertical" role="group">
                     <button type="submit" class="btn btn-success btn-block">
-                        <span v-if="isDeleting" class="spinner-border spinner-border-sm" role="status"
-                            aria-hidden="true"></span>
+                        <span v-if="isDeleting" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                         DELETE</button>
                     <button type="button" class="btn btn-danger btn-block" @click="goHome">
                         BACK</button>

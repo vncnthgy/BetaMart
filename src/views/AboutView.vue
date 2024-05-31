@@ -3,7 +3,6 @@
     <div class="title-section">
       <h2>ABOUT US</h2>
     </div><br>
-
     <h2 style="text-align:center">Group 6 Members:</h2>
     <div class="row">
       <div class="column">
@@ -15,7 +14,6 @@
           </div>
         </div>
       </div>
-
       <div class="column">
         <div class="card">
           <img src="@/assets/profile.jpg" alt="Mike" style="width:100%">
@@ -25,7 +23,6 @@
           </div>
         </div>
       </div>
-
       <div class="column">
         <div class="card">
           <img src="@/assets/profile.jpg" alt="John" style="width:100%">
@@ -35,7 +32,6 @@
           </div>
         </div>
       </div>
-
       <div class="column">
         <div class="card">
           <img src="@/assets/profile.jpg" alt="John" style="width:100%">
@@ -45,7 +41,6 @@
           </div>
         </div>
       </div>
-
       <div class="column">
         <div class="card">
           <img src="@/assets/profile.jpg" alt="John" style="width:100%">
@@ -105,6 +100,7 @@ html {
 
 .container {
   padding: 0 16px;
+  text-align: center;
 }
 
 .container::after,

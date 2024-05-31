@@ -3,29 +3,24 @@
         <div class="title-section">
             <h2 class="text-center">EDIT PRODUCT</h2>
         </div><br>
-        <p v-if="successMessage" class="edit-product-message alert alert-success mt-3 text-center">{{ successMessage }}
-        </p>
+        <p v-if="successMessage" class="edit-product-message alert alert-success mt-3 text-center">{{ successMessage }}</p>
         <form @submit.prevent="editProduct" class="edit-product-form">
             <div class="form-group mb-3">
                 <label for="name"><b>Product Name:</b></label>
-                <input type="text" id="name" v-model="name" class="form-control" placeholder="Enter Product Name"
-                    required>
+                <input type="text" id="name" v-model="name" class="form-control" placeholder="Enter Product Name" required>
             </div>
             <div class="form-group mb-3">
                 <label for="description"><b>Description:</b></label>
-                <textarea id="description" v-model="description" class="form-control" rows="3"
-                    placeholder="Enter Product Description" required></textarea>
+                <textarea id="description" v-model="description" class="form-control" rows="3" placeholder="Enter Product Description" required></textarea>
             </div>
             <div class="form-group mb-3">
                 <label for="price"><b>Price:</b></label>
-                <input type="number" id="price" v-model.number="price" class="form-control"
-                    placeholder="Enter Product Price" min="0" required>
+                <input type="number" id="price" v-model.number="price" class="form-control" placeholder="Enter Product Price" min="0" required>
             </div>
             <div class="d-grid gap-2 col-5 mx-auto">
                 <div class="btn-group-vertical" role="group">
                     <button type="submit" class="btn btn-success btn-block">
-                        <span v-if="isEditing" class="spinner-border spinner-border-sm" role="status"
-                            aria-hidden="true"></span>
+                        <span v-if="isEditing" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                         EDIT</button>
                     <button type="button" class="btn btn-danger btn-block" @click="goHome">
                         BACK</button>
