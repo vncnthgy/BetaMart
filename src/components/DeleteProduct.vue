@@ -1,13 +1,15 @@
 <template>
     <div class="delete-product-container container mt-4 shadow p-3 mb-5 bg-white rounded">
-        <h2 class="text-center">DELETE PRODUCT</h2>
+        <div class="title-section">
+            <h2 class="text-center">DELETE PRODUCT</h2>
+        </div><br>
         <p v-if="successMessage" class="delete-product-message alert alert-success mt-3 text-center">{{ successMessage
             }}</p>
         <form @submit.prevent="deleteProduct" class="delete-product-form">
             <div class="form-group mb-3">
                 <label for="name"><b>Product Name:</b></label>
-                <input type="text" id="name" v-model="name" class="form-control-plaintext" placeholder="Enter Product Name"
-                    readonly>
+                <input type="text" id="name" v-model="name" class="form-control-plaintext"
+                    placeholder="Enter Product Name" readonly>
             </div>
             <div class="form-group mb-3">
                 <label for="description"><b>Description:</b></label>
@@ -105,5 +107,12 @@ export default {
 
 .text-center {
     text-align: center;
+}
+
+.title-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
 }
 </style>

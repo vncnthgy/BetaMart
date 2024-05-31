@@ -1,6 +1,8 @@
 <template>
     <div class="edit-product-container container mt-4 shadow p-3 mb-5 bg-white rounded">
-        <h2 class="text-center">EDIT PRODUCT</h2>
+        <div class="title-section">
+            <h2 class="text-center">EDIT PRODUCT</h2>
+        </div><br>
         <p v-if="successMessage" class="edit-product-message alert alert-success mt-3 text-center">{{ successMessage }}
         </p>
         <form @submit.prevent="editProduct" class="edit-product-form">
@@ -108,5 +110,12 @@ export default {
 
 .text-center {
     text-align: center;
+}
+
+.title-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
 }
 </style>

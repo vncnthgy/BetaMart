@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="@/assets/logo.png" width="35" height="35" class="d-inline-block align-top" alt="">
+        <img src="@/assets/brand.jpg" width="35" height="35" class="d-inline-block align-top" alt="">
         BetaMart
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

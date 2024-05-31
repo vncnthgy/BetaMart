@@ -1,6 +1,8 @@
 <template>
   <div class="list-product-container container mt-4 shadow p-3 mb-5 bg-white rounded">
-    <h2 class="text-center">PRODUCT LIST</h2>
+    <div class="title-section">
+      <h2 class="text-center">PRODUCT LIST</h2>
+    </div><br>
     <p v-if="successMessage" class="list-product-message alert alert-success mt-3 text-center">{{ successMessage }}</p>
     <div class="table-responsive">
       <table class="table align-middle table-hover" v-if="products.length">
@@ -93,5 +95,12 @@ export default {
 
 .list-product-message {
   max-width: 100%;
+}
+
+.title-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
 }
 </style>
