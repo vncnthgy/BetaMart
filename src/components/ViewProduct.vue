@@ -39,7 +39,7 @@
               <router-link to="/addproduct">
                 <button
                   class="btn btn-dark rounded-circle position-fixed d-flex align-items-center justify-content-center y-"
-                  style="bottom: 20px; right: 20px; width: 60px; height: 60px; font-size: 2rem; padding-top: 1px;">
+                  style="bottom: 25px; right: 25px; width: 70px; height: 70px; font-size: 2rem; padding-top: 1px;">
                   {{ text }}
                 </button>
               </router-link>

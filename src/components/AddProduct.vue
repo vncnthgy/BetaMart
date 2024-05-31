@@ -4,16 +4,16 @@
     <p v-if="successMessage" class="add-product-message alert alert-success mt-3 text-center">{{ successMessage }}</p>
     <form @submit.prevent="addProduct" class="add-product-form">
       <div class="form-group mb-3">
-        <label for="name">Product Name:</label>
+        <label for="name"><b>Product Name:</b></label>
         <input type="text" id="name" v-model="name" class="form-control" placeholder="Enter Product Name" required>
       </div>
       <div class="form-group mb-3">
-        <label for="description">Description:</label>
-        <input type="text" id="description" v-model="description" class="form-control"
-          placeholder="Enter Product Description" required>
+        <label for="description"><b>Description:</b></label>
+        <textarea id="description" v-model="description" class="form-control" rows="3"
+          placeholder="Enter Product Description" required></textarea>
       </div>
       <div class="form-group mb-3">
-        <label for="price">Price:</label>
+        <label for="price"><b>Price:</b></label>
         <input type="number" id="price" v-model.number="price" class="form-control" placeholder="Enter Product Price"
           min="0" required>
       </div>
@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     goHome() {
-      this.$router.push('/');
+      this.$router.push('/products');
     },
     addProduct() {
       if (!confirm("Are you sure you want to add this product?")) {
@@ -64,7 +64,7 @@ export default {
         this.successMessage = 'Product successfully added!';
         setTimeout(() => {
           this.successMessage = '';
-          this.$router.push('/');
+          this.$router.push('/products');
         }, 3000);
       }, 1500);
     }
@@ -74,7 +74,7 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 70%;
+  max-width: 40%;
 }
 
 .shadow {

@@ -5,18 +5,18 @@
             }}</p>
         <form @submit.prevent="deleteProduct" class="delete-product-form">
             <div class="form-group mb-3">
-                <label for="name">Product Name:</label>
-                <input type="text" id="name" v-model="name" class="form-control" placeholder="Enter Product Name"
+                <label for="name"><b>Product Name:</b></label>
+                <input type="text" id="name" v-model="name" class="form-control-plaintext" placeholder="Enter Product Name"
                     readonly>
             </div>
             <div class="form-group mb-3">
-                <label for="description">Description:</label>
-                <input type="text" id="description" v-model="description" class="form-control"
-                    placeholder="Enter Product Description" readonly>
+                <label for="description"><b>Description:</b></label>
+                <textarea id="description" v-model="description" class="form-control-plaintext" rows="3"
+                    placeholder="Enter Product Description" readonly></textarea>
             </div>
             <div class="form-group mb-3">
-                <label for="price">Price:</label>
-                <input type="number" id="price" v-model.number="price" class="form-control"
+                <label for="price"><b>Price:</b></label>
+                <input type="number" id="price" v-model.number="price" class="form-control-plaintext"
                     placeholder="Enter Product Price" min="0" readonly>
             </div>
             <div class="d-grid gap-2 col-5 mx-auto">
@@ -49,7 +49,7 @@ export default {
     },
     methods: {
         goHome() {
-            this.$router.push('/');
+            this.$router.push('/products');
         },
         getProduct() {
             const id = Number(this.$route.params.id);
@@ -78,7 +78,7 @@ export default {
                 this.successMessage = 'Product successfully deleted!';
                 setTimeout(() => {
                     this.successMessage = '';
-                    this.$router.push('/');
+                    this.$router.push('/products');
                 }, 3000);
             }, 1500);
         }
@@ -88,7 +88,7 @@ export default {
 
 <style scoped>
 .container {
-    max-width: 70%;
+    max-width: 40%;
 }
 
 .shadow {

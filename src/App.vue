@@ -12,16 +12,16 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
-            <a class="nav-link mx-2" href="/">Home</a>
+            <RouterLink to="/" class="nav-link mx-2">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="/">Products</a>
+            <RouterLink to="/products" class="nav-link mx-2">Products</RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="#!">About</a>
+            <RouterLink to="/about" class="nav-link mx-2">About</RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="#!">Account</a>
+            <RouterLink to="/account" class="nav-link mx-2">Account</RouterLink>
           </li>
         </ul>
       </div>
