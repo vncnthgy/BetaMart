@@ -50,7 +50,7 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 40%;
+  max-width: 30%;
 }
 
 .shadow {
