@@ -22,7 +22,7 @@
                     <button type="submit" class="btn btn-success btn-block">
                         <span v-if="isEditing" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                         EDIT</button>
-                    <button type="button" class="btn btn-danger btn-block" @click="goHome">
+                    <button type="button" class="btn btn-danger btn-block" @click="goBack">
                         BACK</button>
                 </div>
             </div>
@@ -45,7 +45,7 @@ export default {
         this.getProduct();
     },
     methods: {
-        goHome() {
+        goBack() {
             this.$router.push('/products');
         },
         getProduct() {

@@ -22,7 +22,7 @@
           <button type="submit" class="btn btn-success btn-block">
             <span v-if="isAdding" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             ADD</button>
-          <button type="button" class="btn btn-danger btn-block" @click="goHome">
+          <button type="button" class="btn btn-danger btn-block" @click="goBack">
             BACK</button>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default {
     };
   },
   methods: {
-    goHome() {
+    goBack() {
       this.$router.push('/products');
     },
     addProduct() {
